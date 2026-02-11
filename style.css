@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-text: rgb(50, 112, 247);
+    --main-glider: rgb(204, 227, 250);
+
+    --hbg-bg: #5f6368;
+}
+
+body {
+    background-color: #eff3f9;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Inter';
+}

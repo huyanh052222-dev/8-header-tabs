@@ -1,0 +1,125 @@
+.icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--hbg-bg);
+    margin: 0 auto;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+}
+
+.icon-all {
+    mask-image: url(./all.svg);
+}
+
+.icon-news {
+    mask-image: url(./new.svg);
+}
+
+.icon-trend {
+    mask-image: url(./trebd.svg);
+}
+
+.icon-use {
+    mask-image: url(./use.svg);
+}
+
+.icon-follow {
+    mask-image: url(./follow.svg);
+}
+
+.icon-sub {
+    mask-image: url(./sub.svg);
+}
+
+.nav-container-4 {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 80px;
+    min-width: 620px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+}
+
+.nav-container-4 .nav-list-4 {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.nav-list-4 .nav-item {
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5f6368;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.glider-4 {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 5px;
+    background-color: var(--main-text);
+    border-radius: 5px 5px 0 0;
+    z-index: 1;
+    transition: 0.2s 0.1s ease;
+}
+
+.hd4{
+    display: none;
+}
+
+#tab4-1:checked ~ .nav-list-4 .glider-4 { 
+    width: 60px; 
+    transform: translateX(2px); 
+}
+#tab4-2:checked ~ .nav-list-4 .glider-4 { 
+    width: 60px; 
+    transform: translateX(76px); 
+}
+#tab4-3:checked ~ .nav-list-4 .glider-4 { 
+    width: 60px;
+    transform: translateX(168px); 
+}
+#tab4-4:checked ~ .nav-list-4 .glider-4 { 
+    width: 60px; 
+    transform: translateX(266px); 
+}
+#tab4-5:checked ~ .nav-list-4 .glider-4 { 
+    width: 60px;
+    transform: translateX(367px); 
+}
+#tab4-6:checked ~ .nav-list-4 .glider-4 { 
+    width: 60px;
+    transform: translateX(482px); 
+}
+
+#tab4-1:checked ~ .nav-list-4 label[for="tab4-1"],
+#tab4-2:checked ~ .nav-list-4 label[for="tab4-2"],
+#tab4-3:checked ~ .nav-list-4 label[for="tab4-3"],
+#tab4-4:checked ~ .nav-list-4 label[for="tab4-4"],
+#tab4-5:checked ~ .nav-list-4 label[for="tab4-5"],
+#tab4-6:checked ~ .nav-list-4 label[for="tab4-6"] 
+{
+    color: var(--main-text);
+}
+
+#tab4-1:checked ~ .nav-list-4 label[for="tab4-1"] .icon,
+#tab4-2:checked ~ .nav-list-4 label[for="tab4-2"] .icon,
+#tab4-3:checked ~ .nav-list-4 label[for="tab4-3"] .icon,
+#tab4-4:checked ~ .nav-list-4 label[for="tab4-4"] .icon,
+#tab4-5:checked ~ .nav-list-4 label[for="tab4-5"] .icon,
+#tab4-6:checked ~ .nav-list-4 label[for="tab4-6"] .icon 
+{
+    background-color: var(--main-text);
+}

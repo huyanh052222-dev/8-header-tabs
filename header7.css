@@ -1,0 +1,95 @@
+.nav-container-7 {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 16px;
+    min-width: 610px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+}
+
+.nav-container-7 .nav-list-7 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #eff3f9;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.nav-list-7 .nav-item {
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5f6368;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.glider-7 {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 10px; 
+    z-index: 1;
+    transition: 0.2s 0.1s ease;
+    box-shadow: 0px 2px 10px rgba(154, 154, 154, 0.488);
+}
+
+.hd7{
+    display: none;
+}
+
+#tab7-1:checked ~ .nav-list-7 .glider-7 { 
+    width: 80px; 
+    transform: translateX(7px); 
+}
+#tab7-2:checked ~ .nav-list-7 .glider-7 { 
+    width: 105px; 
+    transform: translateX(98px); 
+}
+#tab7-3:checked ~ .nav-list-7 .glider-7 { 
+    width: 126px;
+    transform: translateX(210px); 
+}
+#tab7-4:checked ~ .nav-list-7 .glider-7 { 
+    width: 116px; 
+    transform: translateX(340px); 
+}
+#tab7-5:checked ~ .nav-list-7 .glider-7 { 
+    width: 124px;
+    transform: translateX(468px); 
+}
+#tab7-6:checked ~ .nav-list-7 .glider-7 { 
+    width: 144px;
+    transform: translateX(608px); 
+}
+
+#tab7-1:checked ~ .nav-list-7 label[for="tab7-1"],
+#tab7-2:checked ~ .nav-list-7 label[for="tab7-2"],
+#tab7-3:checked ~ .nav-list-7 label[for="tab7-3"],
+#tab7-4:checked ~ .nav-list-7 label[for="tab7-4"],
+#tab7-5:checked ~ .nav-list-7 label[for="tab7-5"],
+#tab7-6:checked ~ .nav-list-7 label[for="tab7-6"] 
+{
+    color: var(--main-text);
+}
+
+#tab7-1:checked ~ .nav-list-7 label[for="tab7-1"] .icon,
+#tab7-2:checked ~ .nav-list-7 label[for="tab7-2"] .icon,
+#tab7-3:checked ~ .nav-list-7 label[for="tab7-3"] .icon,
+#tab7-4:checked ~ .nav-list-7 label[for="tab7-4"] .icon,
+#tab7-5:checked ~ .nav-list-7 label[for="tab7-5"] .icon,
+#tab7-6:checked ~ .nav-list-7 label[for="tab7-6"] .icon 
+{
+    background-color: var(--main-text);
+}

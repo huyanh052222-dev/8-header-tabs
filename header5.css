@@ -1,0 +1,91 @@
+.nav-container-5 {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 16px;
+    min-width: 610px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+}
+
+.nav-container-5 .nav-list-5 {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.nav-list-5 .nav-item {
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5f6368;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.glider-5 {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 100%;
+    background-color: var(--main-glider);
+    border-radius: 10px;
+    z-index: 1;
+    transition: 0.2s 0.1s ease;
+}
+
+.hd5{
+    display: none;
+}
+
+#tab5-1:checked ~ .nav-list-5 .glider-5 { 
+    width: 88px; 
+    transform: translateX(2px); 
+}
+#tab5-2:checked ~ .nav-list-5 .glider-5 { 
+    width: 105px; 
+    transform: translateX(96px); 
+}
+#tab5-3:checked ~ .nav-list-5 .glider-5 { 
+    width: 126px;
+    transform: translateX(206px); 
+}
+#tab5-4:checked ~ .nav-list-5 .glider-5 { 
+    width: 116px; 
+    transform: translateX(340px); 
+}
+#tab5-5:checked ~ .nav-list-5 .glider-5 { 
+    width: 124px;
+    transform: translateX(465px); 
+}
+#tab5-6:checked ~ .nav-list-5 .glider-5 { 
+    width: 140px;
+    transform: translateX(602px); 
+}
+
+#tab5-1:checked ~ .nav-list-5 label[for="tab5-1"],
+#tab5-2:checked ~ .nav-list-5 label[for="tab5-2"],
+#tab5-3:checked ~ .nav-list-5 label[for="tab5-3"],
+#tab5-4:checked ~ .nav-list-5 label[for="tab5-4"],
+#tab5-5:checked ~ .nav-list-5 label[for="tab5-5"],
+#tab5-6:checked ~ .nav-list-5 label[for="tab5-6"] 
+{
+    color: var(--main-text);
+}
+
+#tab5-1:checked ~ .nav-list-5 label[for="tab5-1"] .icon,
+#tab5-2:checked ~ .nav-list-5 label[for="tab5-2"] .icon,
+#tab5-3:checked ~ .nav-list-5 label[for="tab5-3"] .icon,
+#tab5-4:checked ~ .nav-list-5 label[for="tab5-4"] .icon,
+#tab5-5:checked ~ .nav-list-5 label[for="tab5-5"] .icon,
+#tab5-6:checked ~ .nav-list-5 label[for="tab5-6"] .icon 
+{
+    background-color: var(--main-text);
+}

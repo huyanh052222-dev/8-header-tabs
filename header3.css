@@ -1,0 +1,78 @@
+.nav-container-3 {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 80px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+}
+
+.nav-container-3 .nav-list-3 {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.nav-container-3 .nav-list-3 .nav-item {
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5f6368;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.glider-3 {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 10px;
+    background-color: var(--main-text);
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.2s 0.1s ease;
+}
+
+.hd3{
+    display: none;
+}
+
+#tab-3-1:checked ~ .nav-list-3 .glider-3 { 
+    width: 10px; 
+    transform: translateX(24px); 
+}
+#tab-3-2:checked ~ .nav-list-3 .glider-3 { 
+    width: 10px; 
+    transform: translateX(97px); 
+}
+#tab-3-3:checked ~ .nav-list-3 .glider-3 { 
+    width: 10px;
+    transform: translateX(190px); 
+}
+#tab-3-4:checked ~ .nav-list-3 .glider-3 { 
+    width: 10px; 
+    transform: translateX(288px); 
+}
+#tab-3-5:checked ~ .nav-list-3 .glider-3 { 
+    width: 10px;
+    transform: translateX(388px); 
+}
+#tab-3-6:checked ~ .nav-list-3 .glider-3 { 
+    width: 10px;
+    transform: translateX(505px); 
+}
+
+#tab-3-1:checked ~ .nav-list-3 label[for="tab-3-1"],
+#tab-3-2:checked ~ .nav-list-3 label[for="tab-3-2"],
+#tab-3-3:checked ~ .nav-list-3 label[for="tab-3-3"],
+#tab-3-4:checked ~ .nav-list-3 label[for="tab-3-4"],
+#tab-3-5:checked ~ .nav-list-3 label[for="tab-3-5"],
+#tab-3-6:checked ~ .nav-list-3 label[for="tab-3-6"] 
+{
+    color: var(--main-text);
+}

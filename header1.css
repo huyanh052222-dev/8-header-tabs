@@ -1,0 +1,98 @@
+.nav-container-1 {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 80px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ededed;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.menu-btn .hbg{
+    display: block;
+    mask-image: url(./bars-solid-full.svg);
+    background-color: var(--hbg-bg);
+    width: 20px;
+    height: 20px;
+}
+
+.nav-list {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--hbg-bg);
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.glider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--main-glider);
+    border-radius: 50px;
+    z-index: 1;
+    transition: 0.2s 0.1s ease;
+}
+
+.hd1{
+    display: none;
+}
+
+#tab-1:checked ~ .nav-list .glider { 
+    width: 62px; 
+    transform: translateX(0); 
+}
+#tab-2:checked ~ .nav-list .glider { 
+    width: 80px; 
+    transform: translateX(62px); 
+}
+#tab-3:checked ~ .nav-list .glider { 
+    width: 106px;
+    transform: translateX(142px); 
+}
+#tab-4:checked ~ .nav-list .glider { 
+    width: 98px; 
+    transform: translateX(240px); 
+}
+#tab-5:checked ~ .nav-list .glider { 
+    width: 108px;
+    transform: translateX(334px); 
+}
+#tab-6:checked ~ .nav-list .glider { 
+    width: 118px;
+    transform: translateX(446px); 
+}
+
+#tab-1:checked ~ .nav-list label[for="tab-1"],
+#tab-2:checked ~ .nav-list label[for="tab-2"],
+#tab-3:checked ~ .nav-list label[for="tab-3"],
+#tab-4:checked ~ .nav-list label[for="tab-4"],
+#tab-5:checked ~ .nav-list label[for="tab-5"],
+#tab-6:checked ~ .nav-list label[for="tab-6"] 
+{
+    color: var(--main-text);
+}

@@ -50,24 +50,24 @@
     transform: translateX(2px); 
 }
 #tab5-2:checked ~ .nav-list-5 .glider-5 { 
-    width: 105px; 
-    transform: translateX(96px); 
+    width: 109px; 
+    transform: translateX(92px); 
 }
 #tab5-3:checked ~ .nav-list-5 .glider-5 { 
-    width: 126px;
-    transform: translateX(206px); 
+    width: 132px;
+    transform: translateX(202px); 
 }
 #tab5-4:checked ~ .nav-list-5 .glider-5 { 
-    width: 116px; 
-    transform: translateX(340px); 
+    width: 122px; 
+    transform: translateX(338px); 
 }
 #tab5-5:checked ~ .nav-list-5 .glider-5 { 
-    width: 124px;
-    transform: translateX(465px); 
+    width: 138px;
+    transform: translateX(460px); 
 }
 #tab5-6:checked ~ .nav-list-5 .glider-5 { 
-    width: 140px;
-    transform: translateX(602px); 
+    width: 150px;
+    transform: translateX(598px); 
 }
 
 #tab5-1:checked ~ .nav-list-5 label[for="tab5-1"],

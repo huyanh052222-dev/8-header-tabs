@@ -66,8 +66,8 @@
     transform: translateX(468px); 
 }
 #tab6-6:checked ~ .nav-list-6 .glider-6 { 
-    width: 140px;
-    transform: translateX(602px); 
+    width: 150px;
+    transform: translateX(598px); 
 }
 
 #tab6-1:checked ~ .nav-list-6 label[for="tab6-1"],
